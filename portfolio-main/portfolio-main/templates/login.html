@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/gr.css">
+    <title>Flask App</title>
+</head>
+<div class="scroll">
+{% block content %}
+    <h1 id="text3">Авторизация</h1>
+    <form method="POST">
+        <p id="text1">{{message}}</p>
+        <p id="text2">{{message2}}</p>
+        <label for= "username">
+            <p id="text4">Имя Пользователя.</p>
+        <input  class="form__input_u" type="username" name="username" id="username" placeholder="Введите UserName" required>
+        </label>
+            <p id="text5">Пароль.</p>
+        <label  for= "password">
+        <input  class="form__input_p" type="password" name="password" id=" password" placeholder="Введите пароль" required>
+        </label>
+        <button class="form__button" type="submit">Войти</button>
+        <a href="/" class="form__button_r reg__link">Вернуться</a>
+    </form>
+{% endblock %}
+
+
+</div>
